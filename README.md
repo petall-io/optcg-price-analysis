@@ -2,6 +2,7 @@
 ## Overview
 A data collection, cleaning, and analysis project tracking 180+ days of One Piece Trading Card Game (OPTCG) price history across 19 English version sets. 
 [View Interactive Dashboard (Tableau Public)](https://public.tableau.com/shared/G2NWQDKD2?:display_count=n&:origin=viz_share_link)
+![Dashboard Preview](image.png)
 
 ## Objective
 Collect raw OPTCG price data and apply data cleaning, transformation, and analysis techniques to identify and visualize optimal buying windows and price trends for both players and collectors. 
@@ -119,7 +120,7 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
  ### Step 4: Milestones Table(analysis.ipynb)
  A summary table that pivots median prices per variant per lifecycle stage and computes:
  |Metric|Description|
- |------|:----------:|
+ |------|-----------|
  |change_pre_to_week_pct|% price change from pre-release to launch week|
  |change_pre_to_month_pct|% price change from pre-release to first month|
  |change_week_to_month_pct|% price change from launch week to first month|
