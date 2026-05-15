@@ -148,14 +148,14 @@ Run Python scripts 00 - 06 in order
 - Assing unique names to "VARIANTS_OUT" and "HISTORY_OUT" in 06 for version control. Keep these files as they contain the earliest start point for your data
 #### Data Analysis
 Open analysis.ipynb to clean, process, engineer features, analyze, and export final CSVs
-##### Overhead Section
+#### Overhead Section
 - Assign "variants" and "prices" as the variants and price history output files in 06
-##### Export CSVs: Sort Tables & Export Section
+#### Export CSVs: Sort Tables & Export Section
 - Assign unique names to "VARIANTS_OUT" and "PRICES_OUT" for version control. Names should indicate that files are cleaned
-##### Building more features Section
+#### Building more features Section
 - In the Set Up Section, assign "variants" and "prices" to the respective cleaned variants and price history files from the Export CSVs section
 - In the Sort and Export Section, assign unique names to "VARIANTS_OUT", "PRICES_OUT", and "MILESTONES_OUT" for version control. Best to indicate that these files have been cleaned with added features. These files will then be used in Tableau for visualization. 
-##### Appending CSVs Section
+#### Appending CSVs Section
 Run Python scripts 00 - 06 at a future date to expand dataset
 - Assign "variants_1" as the initial 06 "VARIANTS_OUT" file, and "variants_2" as the most recent 06 "VARIANTS_OUT" file
 - Assign "prices_1" as the initial 06 "HISTORY_OUT" file, and "prices_2" as the most recent 06 "HISTORY_OUT" file
