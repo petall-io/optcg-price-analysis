@@ -22,7 +22,7 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
 - Super Rares have the most significant post-launch drop among all base rarities
 - Wanted Posters are the only rarity variant that consistently increases in value immediately after pre-release
 - Wanted Posters, SPs, and Manga Rares maintain a positive price index after the first month of release
-- The best buying window is on day 30-60 for Near Mint (NM) cards, Base Rarity cards, and sealed products since prices for the specified products reach their floor in this range when analyzing the most recent sets with existing early price data (OP12-14, PRB02, and EB03)
+- The best buying window is on day 30-60 for Near Mint (NM) cards, Base Rarity cards, and Sealed Products. Prices for the specified products reach their floor in this range when analyzing the most recent sets with existing early price data (OP12-14, PRB02, and EB03)
 - Variant-specific buying windows differ:
     - Wanted Posters & Mangas: Day 0-6
     - SPs: Day 7-29
@@ -76,7 +76,7 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
     - Short variant IDs follow the pattern: {set}-{card-name}-{rarity}-{condition}
  ### Step 3: Feature Engineering (analysis.ipynb)
  |Feature|Description|
- |:-----:|:---------:|
+ |:-----:|-----------|
  |days_since_release|Days elapsed since the card's set release date|
  |rarity variant|Classified variant type (Normal, Alternate Art, SP, Manga, etc.)|
  |price_index|Price normalized to launch week = 100 for cross-card comparison|
@@ -88,7 +88,7 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
  |max_days_available:|Total days of price data available per variant|
  #### Rarity Variant Classfication
  |Rarity Variant|Alias|
- |:------------:|:---:|
+ |--------------|:---:|
  |Common|C|
  |Uncommon|UC|
  |DON!!!|Don|
@@ -108,7 +108,7 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
  |Textured Foil|Textured Foil|
  #### Lifecycle Stages:
  |Stage|Days Since Release|
- |:---:|:----------------:|
+ |-----|:----------------:|
  |Pre-Release|<0|
  |Launch Week|0-6|
  |Early Post-Launch|7-29|
@@ -117,17 +117,17 @@ Collect raw OPTCG price data and apply data cleaning, transformation, and analys
  |Late Phase|180-364|
  |Mature Phase|365+|
  ### Step 4: Milestones Table(analysis.ipynb)
- - A summary table pivots median prices per variant per lifecycle stage and computes:
+ A summary table that pivots median prices per variant per lifecycle stage and computes:
  |Metric|Description|
- |:----:|:----------|
+ |------|:----------:|
  |change_pre_to_week_pct|% price change from pre-release to launch week|
  |change_pre_to_month_pct|% price change from pre-release to first month|
  |change_week_to_month_pct|% price change from launch week to first month|
  |week_efficieny_ratio| How much of the total decline happened in launch week vs the full first month|
  ### Step 5: Outputs
- - Export as CSVs for data visualization
+ Export as CSVs for data visualization
  |File|Description|
- |:---:|:--------:|
+ |:---:|--------|
  |variants_clean.csv|Cleaned table of card variants & metadata|
  |prices_clean.csv|Cleaned price history with all engineered features|
  |milestones.csv|Per-variant lifecycle stage price summary|
