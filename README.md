@@ -1,7 +1,9 @@
 # One Piece TCG Analysis (2026)
 ## Overview
 A data collection, cleaning, and analysis project tracking 180+ days of One Piece Trading Card Game (OPTCG) price history across 19 English version sets. 
-[View Interactive Dashboard (Tableau Public)](https://public.tableau.com/shared/G2NWQDKD2?:display_count=n&:origin=viz_share_link)
+
+**[View Interactive Dashboard (Tableau Public)](https://public.tableau.com/shared/G2NWQDKD2?:display_count=n&:origin=viz_share_link)**
+
 ![Dashboard Preview](image.png)
 
 ## Objective
